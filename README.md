@@ -14,9 +14,15 @@ Boss直聘聊天会话分析油猴脚本（Tampermonkey UserScript）。
 
 1. 安装 [Tampermonkey](https://www.tampermonkey.net/) 浏览器扩展
 2. 安装 `userscripts/boss-friend-list.user.js`
-3. 编辑脚本顶部 `FRIEND_IDS`，填入你要查询的沟通对象 uid 列表（获取方式见脚本内注释）
-4. 打开任意 boss.zhipin.com 页面，右上角点击「发送请求」
+3. 打开任意 zhipin.com 页面，右上角点击「发送请求」
+
+联系人列表由脚本自动通过 `geekFilterByLabel` 接口拉取（最近 30 天内有沟通记录的对象），
+无需手动填写；如需只统计部分对象，可在脚本顶部 `FRIEND_IDS` 手动指定 uid 列表。
 
 ## 免责声明
 
 仅供个人求职场景下分析自己的聊天数据使用，请勿用于批量采集或骚扰，遵守目标网站的服务条款与相关法律法规。
+
+## 预览
+
+![浮窗预览](./preview.png)
