@@ -1,0 +1,11 @@
+# Command Code 本地配置与个人偏好
+.commandcode/
+
+# 抓包/接口响应数据（含个人账号信息，禁止提交）
+response.json
+*.har
+*.json.log
+mitmproxy-*.log
+
+# 系统文件
+.DS_Store
